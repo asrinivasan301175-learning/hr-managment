@@ -1,0 +1,36 @@
+[project]
+name = "hr-multi-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "sriash73", email = "sriash73@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.162.0",
+    "httpx>=0.28.1",
+    "langchain>=1.4.7",
+    "langchain-chroma>=1.1.0",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.7.1",
+    "langchain-mcp-adapters>=0.3.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-text-splitters>=1.1.3",
+    "langgraph>=1.2.18",
+    "mcp>=1.28,<2",
+    "pydantic-settings>=2.16.2",
+    "pypdf>=6.21.4",
+    "pytest>=9.2.0",
+    "python-multipart>=0.0.32",
+    "requests>=2.34.2",
+    "streamlit>=1.66.1",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+hr-multi-agent = "hr_multi_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
