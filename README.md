@@ -218,10 +218,8 @@ flowchart TD
     CR --> CV[(ChromaDB: company_policy)]
     LR --> LV[(ChromaDB: leave_policy)]
 
-    C --> O[Ollama Chat Model]
-    L --> O
-    A --> O
-    S --> O
+    %% Combine multiple agents pointing to the Ollama node
+    C & L & A & S --> O[Ollama Chat Model]
 
     A --> MC[MCP Client]
     MC --> MS[MCP Server]
